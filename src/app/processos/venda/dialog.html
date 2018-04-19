@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Cliente</h1>
+<div mat-dialog-content>
+  <p>Escolha um Cliente</p>
+  <mat-form-field>
+    <input matInput [(ngModel)]="data.cliente">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="data.cliente" cdkFocusInitial>Ok</button>
+</div>
